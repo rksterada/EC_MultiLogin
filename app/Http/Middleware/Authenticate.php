@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 class Authenticate extends Middleware
 {
-    // ログインしてない時のリダイレクト先を指定
+    // ユーザが未認証の場合のリダイレクト処理
     protected $user_route = 'user.login';
     protected $owner_route = 'owner.login';
     protected $admin_route = 'admin.login';

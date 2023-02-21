@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class RedirectIfAuthenticated
 {
+    // ログイン済みユーザーがアクセスしてきた場合のリダイレクト処理
     // config/auth で設定したものと合わせる
     private const GUARD_USER = 'users';
     private const GUARD_OWNER = 'owners';
